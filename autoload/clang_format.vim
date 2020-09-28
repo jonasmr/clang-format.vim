@@ -25,7 +25,7 @@ function! clang_format#Reformat(is_visual) range
     end
 
     " Build the command line
-    let cmd = "clang-format -fallback-style=none -style=" . shellescape(g:clang_format_style)
+    let cmd = "clang-format "
     let pos = line2byte(line('.')) + col('.') - 2
     let cmd = cmd . " -cursor=" . pos
 
