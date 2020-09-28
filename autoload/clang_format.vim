@@ -4,9 +4,6 @@
 " Repository: https://github.com/cjuniet/clang-format.vim
 " License: http://creativecommons.org/licenses/by/4.0/
 
-if (!exists('g:clang_format_style'))
-  let g:clang_format_style = 'Google'
-endif
 
 function! clang_format#TrimWhitespaces()
   let c = getpos('.')
